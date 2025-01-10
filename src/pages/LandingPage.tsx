@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Typography, Button, Container, Box } from "@mui/material";
-import heroImage from "../assets/Hero_Image.jpg"; // Import the image
+import heroImage from "../assets/Hero.jpg";
 
 const LandingPage = () => {
   return (
@@ -13,7 +13,7 @@ const LandingPage = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: `url(${heroImage})`, // Use the imported image
+          backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

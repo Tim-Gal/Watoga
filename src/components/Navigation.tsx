@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import { AppBar, Toolbar, Button } from "@mui/material";
+import watogaImage from "../assets/Watoga.jpg";
 
 const Navigation = () => {
   return (
@@ -15,8 +16,20 @@ const Navigation = () => {
               "&:hover": {
                 color: "white",
               },
+              display: "flex",
+              alignItems: "center",
+              gap: 1, // Adds space between image and text
             }}
           >
+            <img
+              src={watogaImage}
+              alt="Watoga"
+              style={{
+                height: "32px", // Adjust this value to match your navbar height
+                width: "auto",
+                objectFit: "contain",
+              }}
+            />
             Watoga
           </Button>
         </div>
