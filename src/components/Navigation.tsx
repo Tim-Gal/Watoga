@@ -3,15 +3,16 @@ import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 
 const Navigation = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "#CF7500" }}>
       <Toolbar className="justify-between">
         <Typography
-          variant="h6"
+          variant="h5"
           component={Link}
           to="/"
           className="text-white no-underline"
+          sx={{ backgroundColor: "#CF7500", color: "black" }}
         >
-          Startup Name
+          Watoga
         </Typography>
         <div>
           <Button color="inherit" component={Link} to="/">
