@@ -3,25 +3,61 @@ import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 
 const Navigation = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#CF7500" }}>
-      <Toolbar className="justify-between">
-        <Typography
-          variant="h5"
-          component={Link}
-          to="/"
-          className="text-white no-underline"
-          sx={{ backgroundColor: "#CF7500", color: "black" }}
-        >
-          Watoga
-        </Typography>
+    <AppBar position="static" sx={{ backgroundColor: "#008F11" }}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <div>
-          <Button color="inherit" component={Link} to="/">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/"
+            sx={{
+              color: "white",
+              "&:hover": {
+                color: "white",
+              },
+            }}
+          >
+            Watoga
+          </Button>
+        </div>
+        <div>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/"
+            sx={{
+              color: "white",
+              "&:hover": {
+                color: "white",
+              },
+            }}
+          >
             Home
           </Button>
-          <Button color="inherit" component={Link} to="/about">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/about"
+            sx={{
+              color: "white",
+              "&:hover": {
+                color: "white",
+              },
+            }}
+          >
             About
           </Button>
-          <Button color="inherit" component={Link} to="/product">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/product"
+            sx={{
+              color: "white",
+              "&:hover": {
+                color: "white",
+              },
+            }}
+          >
             Product
           </Button>
         </div>
