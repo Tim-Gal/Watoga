@@ -1,11 +1,21 @@
-import { Link } from "react-router-dom";
+// Navigation.tsx
 import { AppBar, Toolbar, Button } from "@mui/material";
 import watogaImage from "../assets/Watoga.jpg";
 
-const Navigation = () => {
+interface NavigationProps {
+  onHomeClick: () => void;
+  onAboutClick: () => void;
+  onProductClick: () => void;
+}
+
+const Navigation = ({
+  onHomeClick,
+  onAboutClick,
+  onProductClick,
+}: NavigationProps) => {
   return (
     <AppBar
-      position="absolute"
+      position="fixed"
       sx={{ backgroundColor: "rgba(0, 143, 17, 0.5)", zIndex: 1000 }}
     >
       <Toolbar
@@ -18,8 +28,7 @@ const Navigation = () => {
         <div>
           <Button
             color="inherit"
-            component={Link}
-            to="/"
+            onClick={onHomeClick}
             sx={{
               color: "white",
               "&:hover": {
@@ -45,8 +54,7 @@ const Navigation = () => {
         <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
           <Button
             color="inherit"
-            component={Link}
-            to="/"
+            onClick={onHomeClick}
             sx={{
               color: "white",
               height: "40px",
@@ -59,8 +67,7 @@ const Navigation = () => {
           </Button>
           <Button
             color="inherit"
-            component={Link}
-            to="/about"
+            onClick={onAboutClick}
             sx={{
               color: "white",
               height: "40px",
@@ -73,8 +80,7 @@ const Navigation = () => {
           </Button>
           <Button
             color="inherit"
-            component={Link}
-            to="/product"
+            onClick={onProductClick}
             sx={{
               color: "white",
               height: "40px",
