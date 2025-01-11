@@ -4,8 +4,59 @@ import { Typography, Container, Box } from "@mui/material";
 
 const AboutSection = React.forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <Box ref={ref} sx={{ minHeight: "100vh", pt: "80px" }}>
-      <Container className="py-8">
+    <Box
+      ref={ref}
+      sx={{
+        position: "relative",
+        minHeight: "100vh",
+        pt: "80px",
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.1)",
+          zIndex: 1,
+        },
+      }}
+    >
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 1,
+        }}
+      >
+        <div
+          className="blur-gradient"
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: 0,
+            height: "60%",
+            background: "transparent",
+            zIndex: 2,
+            maskImage: "linear-gradient(to bottom, black, transparent)",
+            WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
+            backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
+          }}
+        />
+      </Box>
+
+      <Container
+        className="py-8"
+        sx={{
+          position: "relative",
+          zIndex: 2,
+        }}
+      >
         <Typography variant="h3" className="mb-6">
           About Us
         </Typography>

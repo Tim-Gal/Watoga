@@ -34,9 +34,23 @@ const HomeSection = React.forwardRef<HTMLDivElement, HomeSectionProps>(
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               zIndex: 2,
             },
+            "& > .blur-gradient": {
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: "40%",
+              background: "transparent",
+              zIndex: 2,
+              maskImage: "linear-gradient(to bottom, transparent, black)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent, black)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+            },
           }}
-        />
-
+        >
+          <div className="blur-gradient" />
+        </Box>
         <Container
           sx={{
             position: "relative",
