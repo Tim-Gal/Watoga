@@ -4,8 +4,17 @@ import watogaImage from "../assets/Watoga.jpg";
 
 const Navigation = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#008F11" }}>
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+    <AppBar
+      position="absolute"
+      sx={{ backgroundColor: "rgba(0, 143, 17, 0.5)", zIndex: 1000 }}
+    >
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          minHeight: "80px",
+        }}
+      >
         <div>
           <Button
             color="inherit"
@@ -18,14 +27,14 @@ const Navigation = () => {
               },
               display: "flex",
               alignItems: "center",
-              gap: 1, // Adds space between image and text
+              gap: 1,
             }}
           >
             <img
               src={watogaImage}
               alt="Watoga"
               style={{
-                height: "32px", // Adjust this value to match your navbar height
+                height: "64px",
                 width: "auto",
                 objectFit: "contain",
               }}
@@ -33,13 +42,14 @@ const Navigation = () => {
             Watoga
           </Button>
         </div>
-        <div>
+        <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
           <Button
             color="inherit"
             component={Link}
             to="/"
             sx={{
               color: "white",
+              height: "40px",
               "&:hover": {
                 color: "white",
               },
@@ -53,6 +63,7 @@ const Navigation = () => {
             to="/about"
             sx={{
               color: "white",
+              height: "40px",
               "&:hover": {
                 color: "white",
               },
@@ -66,6 +77,7 @@ const Navigation = () => {
             to="/product"
             sx={{
               color: "white",
+              height: "40px",
               "&:hover": {
                 color: "white",
               },

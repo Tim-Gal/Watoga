@@ -66,12 +66,12 @@ const LandingPage = () => {
         </Typography>
         <Button
           sx={{
-            backgroundColor: "#008F11",
+            backgroundColor: "rgba(0, 143, 17, 0.7)",
             padding: "12px 32px",
             fontSize: "1.1rem",
             "&:hover": {
               color: "white",
-              backgroundColor: "#003B00",
+              backgroundColor: "#008F11",
             },
           }}
           variant="contained"
