@@ -39,7 +39,7 @@ const HomeSection = React.forwardRef<HTMLDivElement, HomeSectionProps>(
               left: 0,
               right: 0,
               bottom: 0,
-              height: "40%",
+              height: "50%",
               background:
                 "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9))", // Added dark gradient
               zIndex: 2,

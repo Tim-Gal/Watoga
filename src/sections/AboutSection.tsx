@@ -38,7 +38,7 @@ const AboutSection = React.forwardRef<HTMLDivElement>((_, ref) => {
             left: 0,
             right: 0,
             top: 0,
-            height: "60%",
+            height: "50%",
             background: "linear-gradient(to bottom, black, transparent)",
             zIndex: 2,
             maskImage: "linear-gradient(to bottom, black, transparent)",
