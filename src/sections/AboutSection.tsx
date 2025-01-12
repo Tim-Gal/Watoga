@@ -40,12 +40,12 @@ const AboutSection = React.forwardRef<HTMLDivElement>((_, ref) => {
             right: 0,
             top: 0,
             height: "60%",
-            background: "transparent",
+            background: "linear-gradient(to bottom, black, transparent)", // Added gradient
             zIndex: 2,
             maskImage: "linear-gradient(to bottom, black, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
+            backdropFilter: "blur(80px)", // Increased from 40px to 80px
+            WebkitBackdropFilter: "blur(80px)", // Increased from 40px to 80px
           }}
         />
       </Box>

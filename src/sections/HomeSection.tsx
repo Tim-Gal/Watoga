@@ -40,12 +40,13 @@ const HomeSection = React.forwardRef<HTMLDivElement, HomeSectionProps>(
               right: 0,
               bottom: 0,
               height: "40%",
-              background: "transparent",
+              background:
+                "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9))", // Added dark gradient
               zIndex: 2,
               maskImage: "linear-gradient(to bottom, transparent, black)",
               WebkitMaskImage: "linear-gradient(to bottom, transparent, black)",
-              backdropFilter: "blur(20px)",
-              WebkitBackdropFilter: "blur(20px)",
+              backdropFilter: "blur(40px)",
+              WebkitBackdropFilter: "blur(40px)",
             },
           }}
         >
