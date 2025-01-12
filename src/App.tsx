@@ -16,7 +16,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div>
       <Navigation
         onHomeClick={() => scrollToSection(homeRef)}
         onAboutClick={() => scrollToSection(aboutRef)}
