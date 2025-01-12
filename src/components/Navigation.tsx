@@ -30,10 +30,6 @@ const Navigation = ({
             color="inherit"
             onClick={onHomeClick}
             sx={{
-              color: "white",
-              "&:hover": {
-                color: "white",
-              },
               display: "flex",
               alignItems: "center",
               gap: 1,
@@ -56,11 +52,7 @@ const Navigation = ({
             color="inherit"
             onClick={onHomeClick}
             sx={{
-              color: "white",
               height: "40px",
-              "&:hover": {
-                color: "white",
-              },
             }}
           >
             Home
@@ -69,11 +61,7 @@ const Navigation = ({
             color="inherit"
             onClick={onAboutClick}
             sx={{
-              color: "white",
               height: "40px",
-              "&:hover": {
-                color: "white",
-              },
             }}
           >
             About
@@ -82,11 +70,7 @@ const Navigation = ({
             color="inherit"
             onClick={onProductClick}
             sx={{
-              color: "white",
               height: "40px",
-              "&:hover": {
-                color: "white",
-              },
             }}
           >
             Product

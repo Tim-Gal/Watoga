@@ -4,7 +4,7 @@ import { Typography, Container, Box } from "@mui/material";
 
 const ProductSection = React.forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <Box ref={ref} sx={{ minHeight: "100vh", pt: "80px" }}>
+    <Box ref={ref} sx={{ height: "100vh", pt: "80px" }}>
       <Container className="py-8">
         <Typography variant="h3" className="mb-6">
           Our Product

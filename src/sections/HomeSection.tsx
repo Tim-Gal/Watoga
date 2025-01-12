@@ -11,7 +11,7 @@ interface HomeSectionProps {
 const HomeSection = React.forwardRef<HTMLDivElement, HomeSectionProps>(
   ({ onProductClick }, ref) => {
     return (
-      <Box ref={ref} sx={{ position: "relative", minHeight: "100vh" }}>
+      <Box ref={ref} sx={{ position: "relative", height: "100vh" }}>
         <Box
           sx={{
             position: "absolute",

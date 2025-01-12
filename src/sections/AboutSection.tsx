@@ -8,7 +8,7 @@ const AboutSection = React.forwardRef<HTMLDivElement>((_, ref) => {
       ref={ref}
       sx={{
         position: "relative",
-        minHeight: "100vh",
+        height: "100vh",
         pt: "80px",
         "&::before": {
           content: '""',
